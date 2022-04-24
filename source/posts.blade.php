@@ -29,12 +29,12 @@
                 <p class="text-sm text-gray-500">
                     <time datetime="2020-03-16">{{ date('F j, Y', $page->date) }}</time>
                 </p>
-                <a href="#" class="block mt-2">
+                <a href="{{ $post->getPath() }}" class="block mt-2">
                     <p class="text-xl font-semibold text-gray-900">{{ $post->title }}</p>
-                    <p class="mt-3 text-base text-gray-500">{{ $post->excerpt }}.</p>
+                    <p class="mt-3 text-base text-gray-500">{{ $post->excerpt }}</p>
                 </a>
                 <div class="mt-3">
-                    <a href="#" class="text-base font-semibold text-gray-600 hover:text-gray-500"> Read full story
+                    <a href="{{ $post->getPath() }}" class="text-base font-semibold text-gray-600 hover:text-gray-500"> Read full story
                     </a>
                 </div>
             </div>
