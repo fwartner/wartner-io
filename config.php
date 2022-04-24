@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => '',
+
     'title' => 'Florian Wartner',
     'description' => 'Website description.',
     'author' => 'Florian Wartner',
